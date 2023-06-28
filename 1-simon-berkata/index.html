@@ -3,72 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simon Berkata</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* display: grid;
-        place-items: center; */
-      }
-
-      .wrapper {
-        width: 20rem;
-        height: 20rem;
-        border: 2px solid black;
-      }
-
-      .container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        transition: 1s;
-      }
-
-      .box {
-        width: 50%;
-        height: 50%;
-        border: 2px solid black;
-      }
-
-      #btn {
-        padding: 1rem 2rem;
-        background-color: #783f04;
-        cursor: pointer;
-        color: white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      .satu {
-        background-color: #ffd966;
-      }
-
-      .dua {
-        background-color: #6fa8dc;
-      }
-
-      .tiga {
-        background-color: #e06666;
-      }
-
-      .empat {
-        background-color: #93c47d;
-      }
-    </style>
+    <title>Alfin Simon Berkata</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
+    <h1>Simon Berkata</h1>
+    <hr />
     <div class="wrapper">
       <div class="container">
         <div class="box satu"></div>
@@ -78,15 +18,6 @@
       </div>
       <button type="button" id="btn"></button>
     </div>
-    <script>
-      const btn = document.querySelector("#btn");
-      const container = document.querySelector(".container");
-      let deg = 0;
-
-      btn.onclick = () => {
-        deg += 90;
-        container.style.transform = "rotate(" + deg + "deg)";
-      };
-    </script>
+    <script src="assets/script/main.js"></script>
   </body>
 </html>
